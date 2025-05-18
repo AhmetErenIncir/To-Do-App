@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline';">
+    <title>Login - To-Do App</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="login-page-background">
+    <div class="login-container">
+      <h1>Welcome</h1>
+      <form id="login-form">
+        <div class="input-group">
+          <input id="username" type="text" placeholder="Username" class="wide-input" />
+        </div>
+        <div class="input-group">
+          <input id="password" type="password" placeholder="Password" class="wide-input" />
+        </div>
+        <div class="error-msg" id="error-msg"></div>
+        <div class="btn-group">
+          <button type="submit" id="login-btn">Login</button>
+        </div>
+      </form>
+      <div class="auth-link-container">
+        <a href="signup.html">Don't have an account? Sign Up</a>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@2.4.0/dist/purify.min.js"></script>
+    <script src="scriptLogin.js"></script>
+    <script>
+      // Hata mesajını temizle
+      window.addEventListener('load', () => {
+        document.getElementById('error-msg').textContent = '';
+      });
+    </script>
+  </body>
+</html>

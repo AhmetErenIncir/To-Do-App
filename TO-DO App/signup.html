@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Sign Up - To-Do App</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-page-background"> <!-- Reusing the background style -->
+    <div class="login-container"> <!-- Reusing the container style -->
+        <h1>Create Account</h1>
+        <form id="signup-form">
+        <div class="input-group">
+            <input id="username" type="text" placeholder="Username" class="wide-input" />
+        </div>
+        <div class="input-group">
+            <input id="password" type="password" placeholder="Password" class="wide-input" />
+        </div>
+        <div class="error-msg" id="error-msg"></div>
+        <div class="btn-group">
+            <button type="submit" id="signup-action-btn">Sign Up</button>
+        </div>
+        </form>
+        <div class="auth-link-container">
+            <a href="login.html">Already have an account? Login</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@2.4.0/dist/purify.min.js"></script>
+    <script src="scriptSignup.js"></script>
+</body>
+</html>
